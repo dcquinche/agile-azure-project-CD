@@ -1,3 +1,5 @@
+[![Build Status](https://dev.azure.com/odluser243333/AgilePipelineProject/_apis/build/status%2Fdcquinche.agile-azure-project-CD?branchName=main)](https://dev.azure.com/odluser243333/AgilePipelineProject/_build/latest?definitionId=1&branchName=main)
+
 # Overview
 
 <TODO: complete this with an overview of your project>
