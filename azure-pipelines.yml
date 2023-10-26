@@ -11,7 +11,6 @@ pool:
   name: Default
 
 variables:
-  azureServiceConnectionId: 'myServiceConnection'
   webAppName: 'mywebapp243333'
   projectRoot: $(System.DefaultWorkingDirectory)
   environmentName: 'msdocs_sample_app'
@@ -42,22 +41,3 @@ stages:
       displayName: 'Step - Upload package'
       artifact: drop
 
-- stage: Deploy
-  displayName: 'Deploy Web App'
-  dependsOn: Build
-  condition: succeeded()
-  jobs:
-  - deployment: DeploymentJob
-    pool: Default
-    environment: $(environmentName)
-    strategy:
-      runOnce:
-        deploy:
-          steps:
-          - task: AzureWebApp@1
-            displayName: 'Deploy Azure Web App : '
-            inputs:
-              azureSubscription: $(azureServiceConnectionId)
-              appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              appType: webApp
