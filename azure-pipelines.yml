@@ -6,7 +6,10 @@
 trigger:
 - main
 
-pool: myAgentPool
+pool:
+  vmImage: ubuntu-latest
+  name: Default
+
 variables:
   azureServiceConnectionId: 'myServiceConnection'
   webAppName: 'mywebapp243333'
@@ -18,7 +21,7 @@ stages:
   displayName: Build stage
   jobs:
   - job: BuildJob
-    pool: myAgentPool
+    pool: Default
     steps:
     - script: |
         export PATH=$HOME/.local/bin:$PATH
@@ -45,7 +48,7 @@ stages:
   condition: succeeded()
   jobs:
   - deployment: DeploymentJob
-    pool: myAgentPool
+    pool: Default
     environment: $(environmentName)
     strategy:
       runOnce:
