@@ -12,7 +12,7 @@ pool:
 
 variables:
   azureServiceConnectionId: 'myServiceConnection'
-  webAppName: 'mywebapp243333'
+  webAppName: 'mywebapp243372'
   projectRoot: $(System.DefaultWorkingDirectory)
   environmentName: 'msdocs_sample_app'
 
