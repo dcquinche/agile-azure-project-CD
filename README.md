@@ -3,7 +3,7 @@
 
 # Overview
 
-This project consist in building a CI/CD Pipeline. In the first part we are going to do it with Github Actions along with a Makefile, requirements and application code, and then, we are going to integrate this with Azure Pipelines using the Flask web framework.
+This project consists in building a CI/CD Pipeline. In the first part we are going to do it with Github Actions along with a Makefile, requirements and application code, and then, we are going to integrate this with Azure Pipelines using the Flask web framework.
 
 ## Project Plan
 
@@ -118,6 +118,6 @@ You can find all the files that corresponds to this first part in the following 
 
 ## Demo
 
-[Demo Video]()
+[Demo Video](https://www.youtube.com/watch?v=gI30IqM73jg)
 
 
