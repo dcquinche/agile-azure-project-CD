@@ -1,4 +1,5 @@
-[![Build Status](https://dev.azure.com/odluser243333/AgilePipelineProject/_apis/build/status%2Fdcquinche.agile-azure-project-CD?branchName=main)](https://dev.azure.com/odluser243333/AgilePipelineProject/_build/latest?definitionId=1&branchName=main)
+https://dev.azure.com/odluser243439/agile-azure-project-CI-CD/_apis/build/status%2Fdcquinche.agile-azure-project-CI-CD?branchName=main
+
 
 # Overview
 
@@ -110,6 +111,9 @@ You can find all the files that corresponds to this first part in the following 
 
 15. Create a pipeline for the project, select the repository and save and run the yml file. I have added a build and deploy stages with some steps.
 
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/13_pipeline.png)
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/13_pipeline_jobs.png)
 
 
 ## Demo
