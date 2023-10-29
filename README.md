@@ -24,7 +24,7 @@ This project consist in building a CI/CD Pipeline. In the first part we are goin
   - A file with some functions.
   - A file to test the functions of the previous file.
 
-2. Generate a ssh key in the shell running the `ssh-keygen -t rsa` command. Then, go to the key using the `cat /home/odl_user/.ssh/id_rsa.pub` command, copy and paste it in github ssh keys settings. Now, you can clone the repository with the SSH key like this `git clone git@github.com:dcquinche/agile-azure-project.git`.
+2. Generate a ssh key in the shell running the `ssh-keygen -t rsa` command. Then, go to the key using the `cat /home/odl_user/.ssh/id_rsa.pub` command, copy and paste it in github ssh keys settings. Now, you can clone the repository with the SSH key like this `git clone git@github.com:dcquinche/agile-azure-project.git` and move to it `cd agile-azure-project`.
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/1_ssh_key_shell.png)
 
@@ -32,17 +32,19 @@ This project consist in building a CI/CD Pipeline. In the first part we are goin
 
 3. Create a virtual environment running the `python3 -m venv ~/.myrepo` command and activate it `source ~/.myrepo/bin/activate`.
 
-![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/3_virtual_environment.png)
-
 4. Inside the virtual environment, you should run the `make all` command to install all the packages needed and run the local test.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/3_virtual_environment.png)
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/4_make_all.png)
 
 ### CI: Configure github actions
 
-5. Go to actions in the repository and create a yml file (be sure you set up a python's version available) and verify that the tests pass.
+5. Go to actions in the repository and create a yml file (be sure you set up a python's version available) and verify that the tests pass. You can also paste the status badge in the readme file.
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/5_github_actions.png)
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/6_status_badge.png)
 
 
 You can find all the files that corresponds to this first part in the following [repository](https://github.com/dcquinche/agile-azure-project)
@@ -50,26 +52,17 @@ You can find all the files that corresponds to this first part in the following 
 
 ### Continuos Delivery on Azure
 
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+1. Clone a new repository with the flask code application or replace the files of the one already created. Then, create a virtual environment and install all the packages needed just like we did in the 3rd and 4th step above.
 
-* Running Azure App Service from Azure Pipelines automatic deployment
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/1_flask_files.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+2. Create the webapp with the following command `az webapp up -n mywebapp243439 -l westeurope --resource-group Azuredevops`. You can change the name and configurations as needed.
 
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+3. Give permissions with the `chmod +x make_predict_azure_app.sh` command and run the prediction file like this `./make_predict_azure_app.sh`.
 
-* Output of streamed log files from deployed application
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/2_webapp_and_prediction.png)
 
->
-
-## Enhancements
-
-<TODO: A short description of how to improve the project in the future>
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/3_url_app.png)
 
 ## Demo
 

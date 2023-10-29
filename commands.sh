@@ -1,5 +1,5 @@
 # Clone and enter to the repository
-git clone https://github.com/dcquinche/agile-azure-project-CI-CD.git
+git clone git@github.com:dcquinche/agile-azure-project-CI-CD.git
 cd agile-azure-project-CI-CD
 
 # Create, activate and configure a virtual environment
