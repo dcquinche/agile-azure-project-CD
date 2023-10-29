@@ -8,11 +8,11 @@ This project consist in building a CI/CD Pipeline. In the first part we are goin
 
 * [Spreadsheet with the project plan](https://docs.google.com/spreadsheets/d/1AZy8BwaYCT0HxbYKhldTA_-8TKOAm92wgtCDIUKcAoE/edit?usp=sharing)
 
-
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/Spreadsheet.png)
 
 * [Trello board for the project](https://trello.com/invite/b/jmY7G3FV/ATTI339b43e25439fcfcf3b77369c7da1cee2D90A971/final-project)
 
-
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/Trello.png)
 
 ## Instructions
 
