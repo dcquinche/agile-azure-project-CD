@@ -1,3 +1,7 @@
+# Generate and show the ssh key
+ssh-keygen -t rsa
+cat /home/odl_user/.ssh/id_rsa.pub
+
 # Clone and enter to the repository
 git clone git@github.com:dcquinche/agile-azure-project-CI-CD.git
 cd agile-azure-project-CI-CD

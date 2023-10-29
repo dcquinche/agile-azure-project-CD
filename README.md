@@ -64,8 +64,56 @@ You can find all the files that corresponds to this first part in the following 
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/3_url_app.png)
 
+4. You can stream the logs of the webapp with the following command `az webapp log tail`.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/4_webapp_log_tail.png)
+
+5. Create some tests using locust and run them in your local terminal `./loadtesting.sh` wich will run the locust file. You can see the results in the localhost 8089.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/5_locust_report.png)
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/5_locust_chart.png)
+
+6. Create a Devops organization from the Azure DevOps organizations service in the azure portal.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/6_devops_org.png)
+
+7. Go to settings and allow public project. Then, create a public project.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/7_setting_public.png)
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/7_project.png)
+
+8. Create an access token and save it to use it in a forward step.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/8_access_token.png)
+
+9. Create a service connection from the project settings.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/9_service_connection.png)
+
+10. Download an agent with the following command `curl -O https://vstsagentpackage.azureedge.net/agent/3.227.2/vsts-agent-linux-x64-3.227.2.tar.gz`. This one works for a Linux system.
+
+11. Create a new directory and move into it, you can use this command `mkdir myagent && cd myagent`.
+
+12. Extracts the downloaded documents like this `tar zxvf ../vsts-agent-linux-x64-3.227.2.tar.gz`.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/10_agent.png)
+
+13. Make the agent configuration, you will need to enter the devops organization url and the access token. Start the configuration with `./config.sh` command.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/11_config_agent.png)
+
+14. Change the agent to an online mode, you can do it running this command `./run.sh`.
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/12_agent_online.png)
+
+15. Create a pipeline for the project, select the repository and save and run the yml file. I have added a build and deploy stages with some steps.
+
+
+
 ## Demo
 
-<TODO: Add link Screencast on YouTube>
+[Demo Video]()
 
 
