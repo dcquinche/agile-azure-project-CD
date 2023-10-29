@@ -24,8 +24,6 @@ This project consist in building a CI/CD Pipeline. In the first part we are goin
   - A file with some functions.
   - A file to test the functions of the previous file.
 
-You can find all the files in this [repository](https://github.com/dcquinche/agile-azure-project)
-
 2. Generate a ssh key in the shell running the `ssh-keygen -t rsa` command. Then, go to the key using the `cat /home/odl_user/.ssh/id_rsa.pub` command, copy and paste it in github ssh keys settings. Now, you can clone the repository with the SSH key like this `git clone git@github.com:dcquinche/agile-azure-project.git`.
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/1_ssh_key_shell.png)
@@ -46,6 +44,8 @@ You can find all the files in this [repository](https://github.com/dcquinche/agi
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CI/5_github_actions.png)
 
+
+You can find all the files that corresponds to this first part in the following [repository](https://github.com/dcquinche/agile-azure-project)
 
 
 ### Continuos Delivery on Azure
