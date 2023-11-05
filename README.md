@@ -17,6 +17,10 @@ This project consists in building a CI/CD Pipeline. In the first part we are goi
 
 ## Instructions
 
+### Architectural Diagram
+
+![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/Plan/Diagram.png)
+
 ### CI: Set up azure cloud shell
 
 1. Create the following files:
@@ -114,6 +118,11 @@ You can find all the files that corresponds to this first part in the following 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/13_pipeline.png)
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/13_pipeline_jobs.png)
+
+
+## Enhancements
+
+It would be good to work with updated repositories to avoid blockages during the process due to versioning.
 
 
 ## Demo
