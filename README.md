@@ -73,7 +73,7 @@ You can find all the files that corresponds to this first part in the following 
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/4_webapp_log_tail.png)
 
-5. Create some tests using locust and run them in your local terminal `./loadtesting.sh` wich will run the locust file. You can see the results in the localhost 8089.
+5. Create some tests using locust and run them in your local terminal `./loadtesting.sh` which will run the locust file. You can see the results in the localhost 8089.
 
 ![](https://github.com/dcquinche/agile-azure-project-CD/blob/main/assets/CD/5_locust_report.png)
 
@@ -127,6 +127,6 @@ It would be good to work with updated repositories to avoid blockages during the
 
 ## Demo
 
-[Demo Video](https://www.youtube.com/watch?v=gI30IqM73jg)
+[Demo Video](https://www.youtube.com/watch?v=lzaxgkJplD4)
 
 
